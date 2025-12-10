@@ -45,7 +45,7 @@
     <extentreports.adapter.version>1.13.0</extentreports.adapter.version>
     <extentreports.version>5.1.0</extentreports.version>
     <json.simple.version>1.1.1</json.simple.version>
-    <jackson.version>2.15.2</jackson.version>
+    <jackson.version>2.20.1</jackson.version>
     <pdfbox.version>2.0.31</pdfbox.version>
     <browserstack.local.version>1.1.5</browserstack.local.version>
     <browserstack.sdk.version>1.31.1</browserstack.sdk.version>
@@ -247,11 +247,9 @@
 							<transformers>
 								<!-- need this to merge the services files
 								properly -->
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
 								<!-- add Main-Class to manifest file -->
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>runnerfiles.Runner</mainClass>
 								</transformer>
 							</transformers>
