@@ -48,7 +48,7 @@
     <jackson.version>2.15.2</jackson.version>
     <pdfbox.version>2.0.31</pdfbox.version>
     <browserstack.local.version>1.1.5</browserstack.local.version>
-    <browserstack.sdk.version>1.31.1</browserstack.sdk.version>
+    <browserstack.sdk.version>1.44.0</browserstack.sdk.version>
     <commons.lang.version>2.6</commons.lang.version>
     <aws.sdk.s3.version>1.12.597</aws.sdk.s3.version>
     </properties>
@@ -247,11 +247,9 @@
 							<transformers>
 								<!-- need this to merge the services files
 								properly -->
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
 								<!-- add Main-Class to manifest file -->
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>runnerfiles.Runner</mainClass>
 								</transformer>
 							</transformers>
