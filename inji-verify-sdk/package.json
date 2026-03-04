@@ -72,7 +72,7 @@
     "@emotion/styled": "^11.14.0",
     "@injistack/pixelpass": "^0.8.0-RC2",
     "@mui/material": "^7.1.0",
-    "ajv": "^8.17.1",
+    "ajv": "^8.18.0",
     "pdfjs-dist": "5.2.133",
     "qrcode.react": "^4.1.0",
     "react-icons": "^5.5.0",
